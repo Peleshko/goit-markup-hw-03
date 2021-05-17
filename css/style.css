@@ -1,0 +1,207 @@
+:root {
+    --accent-color:#2196F3;
+    --title-text-color: #212121;
+    --primary-text-color: #757575;
+    --secondary-text-color: #FFFFFF;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+}
+
+/*Верхняя линия*/
+
+.menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+}
+
+.menu-link {
+    color: var(--title-text-color);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:focus,
+.link:hover {
+    color: var(--accent-color);
+}
+
+.logo{
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,2;
+    letter-spacing: 0.03em;
+}
+
+.first-word {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.contact {
+    color: var(--primary-text-color);
+}
+
+/*Шапка сайта*/
+
+.section {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--accent-color);
+}
+
+/*Особенности*/
+
+.features {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.no-title {
+    visibility: hidden;
+}
+
+h1 {
+    visibility: hidden;
+}
+
+.feature-title {
+    font-weight: 700;
+    line-height: 1,14;
+    color: var(--title-text-color);
+    text-transform: uppercase;
+}
+ 
+/*Наша команда*/
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,17;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.job-name {
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+/*Футер*/
+
+.second-word {
+    color: var(--secondary-text-color);
+}
+
+.address-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.adress-link {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.adress-link:focus,
+.adress-link:hover {
+    color: var(--accent-color);
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+ 
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+
+/*Портфолио*/
+
+.gallery-list {
+    list-style-type: none;
+}  
+
+.portfolio-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-color: currentColor;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
+.card-desc {
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+}
