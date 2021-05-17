@@ -3,12 +3,15 @@
     --title-text-color: #212121;
     --primary-text-color: #757575;
     --secondary-text-color: #FFFFFF;
+    --grey-bg-color: #2F303A;
+    --white-bg-color: #E5E5E5;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--secondary-text-color);
+    background-color: var(--white-bg-color);
     color: var(--primary-text-color);
+    margin: 0;
 }
 
 /*Верхняя линия*/
@@ -18,6 +21,7 @@ body {
     font-size: 14px;
     line-height: 1,14;
     letter-spacing: 0.02em;
+    display: flex;
 }
 
 .menu-link {
@@ -37,13 +41,14 @@ body {
     color: var(--accent-color);
 }
 
-.logo{
+.logo-header{
     color: #000000;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1,2;
     letter-spacing: 0.03em;
+    margin-right: 93px;
 }
 
 .first-word {
@@ -56,20 +61,33 @@ body {
 
 .contact {
     color: var(--primary-text-color);
+    margin-left: 50px;
 }
 
 /*Шапка сайта*/
 
-.section {
-    background-color: #2F303A;
+.hero {
+    background-color: var(--grey-bg-color);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 452px;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1,4;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    margin-bottom: 30px;
+    width: 696px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .button {
@@ -80,6 +98,11 @@ body {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-bottom: 200px;
 }
 
 .button:hover,
@@ -90,9 +113,17 @@ body {
 /*Особенности*/
 
 .features {
+    background-color: var(--white-bg-color);
+    margin-top: 94px;
+}
+
+.features-list {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -30px;
 }
 
 .no-title {
@@ -103,13 +134,41 @@ h1 {
     visibility: hidden;
 }
 
+.feature-item {
+    margin-left: 30px;
+}
+
 .feature-title {
     font-weight: 700;
     line-height: 1,14;
     color: var(--title-text-color);
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/*Чем мы занимаемся*/
+
+.work {
+    display: flex;
+    align-items: center;
+}
+
+.work-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  
+.work-item {
+    margin-left: 30px;
+
+}
+
 /*Наша команда*/
 
 .team {
@@ -122,6 +181,18 @@ h1 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    padding-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-list {
+    display: flex;
+    margin-left: -30px;
 }
 
 .team-desc {
@@ -130,14 +201,36 @@ h1 {
     line-height: 1,17;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-left: 30px;
+    text-align: center;
+}
+
+.person-name {
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .job-name {
     font-weight: 400;
     color: var(--primary-text-color);
+    padding-bottom: 30px;
 }
 
 /*Футер*/
+
+.footer {
+    background-color: var(--grey-bg-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
 .second-word {
     color: var(--secondary-text-color);
@@ -148,6 +241,10 @@ h1 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.address-item:not(:last-child) {
+    padding-bottom: 9px;
 }
 
 .adress-link {
@@ -172,20 +269,20 @@ h1 {
 
 /*Портфолио*/
 
-.gallery-list {
-    list-style-type: none;
-}  
-
 .portfolio-button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--title-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
     border-color: currentColor;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
 }
 
 .portfolio-button:hover,
@@ -205,3 +302,115 @@ h1 {
     line-height: 1,88;
     letter-spacing: 0.03em;
 }
+
+/*Позиционирование*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--secondary-text-color);
+    border-bottom: 1px #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-top: 60px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.card {
+ background-color: var(--secondary-text-color);
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ border-radius: 0px 0px 4px 4px;
+}
+
+/*Позиционирование портфолио*/
+
+.filter {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    margin-left: -8px;
+    padding-bottom: 16px;
+}
+
+.filter-button {
+    margin-left: 8px;
+}
+
+.card-set {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.card-set > .item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .portfolio-card {
+    background: #FFFFFF;
+    box-sizing: border-box;
+  }
+  
+  .card-content {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+  }
+  
+  .card-text {
+    margin-top: 4px;
+  }
