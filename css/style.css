@@ -61,9 +61,11 @@ body {
 
 .contact {
     color: var(--primary-text-color);
-    margin-left: 50px;
 }
 
+.contact-menu {
+    margin-left: 50px;
+}
 /*Шапка сайта*/
 
 .hero {
