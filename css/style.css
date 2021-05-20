@@ -116,7 +116,6 @@ body {
 
 .features {
     background-color: var(--white-bg-color);
-    margin-top: 94px;
 }
 
 .features-list {
@@ -128,8 +127,8 @@ body {
     margin-left: -30px;
 }
 
-.no-title {
-    visibility: hidden;
+/*.no-title {
+    visibility: hidden;*/
 }
 
 h1 {
