@@ -9,7 +9,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--white-bg-color);
+    background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
     margin: 0;
 }
@@ -114,9 +114,9 @@ body {
 
 /*Особенности*/
 
-.features {
+/*.features {
     background-color: var(--white-bg-color);
-}
+}*/
 
 .features-list {
     font-size: 14px;
@@ -125,11 +125,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: -30px;
-}
-
-
-h1 {
-    visibility: hidden;
 }
 
 .feature-item {
