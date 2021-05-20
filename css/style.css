@@ -213,6 +213,8 @@ body {
 
 .footer {
     background-color: var(--grey-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
@@ -222,7 +224,6 @@ body {
 
 .address {
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .second-word {
@@ -237,7 +238,7 @@ body {
 }
 
 .address-item:not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .adress-link {
@@ -354,7 +355,6 @@ img {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-top: 60px;
 }
 
 .menu-item:not(:last-child) {
