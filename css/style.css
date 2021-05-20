@@ -9,36 +9,30 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
-    margin: 0;
 }
 
 /*Верхняя линия*/
 
-.menu {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.header {
+    background-color: var(--secondary-text-color);
+    border-bottom: 1px #ECECEC;
+}
+
+.header-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.menu-link {
-    color: var(--title-text-color);
-}
-
-.list {
-    list-style-type: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.link:focus,
-.link:hover {
-    color: var(--accent-color);
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .logo-header{
@@ -51,8 +45,37 @@ body {
     margin-right: 93px;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.link:focus,
+.link:hover {
+    color: var(--accent-color);
+}
+
 .first-word {
     color: var(--accent-color);
+}
+
+.menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu-link {
+    color: var(--title-text-color);
 }
 
 .current {
@@ -77,7 +100,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 200px;
-    padding-left: 452px;
     padding-bottom: 200px;
 }
 
@@ -114,11 +136,12 @@ body {
 
 /*Особенности*/
 
-/*.features {
-    background-color: var(--white-bg-color);
-}*/
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
-.features-list {
+.features {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -141,20 +164,20 @@ body {
 
 /*Чем мы занимаемся*/
 
-.work {
-    display: flex;
-    align-items: center;
-}
-
-.work-list {
-    display: flex;
-    margin-left: -30px;
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
 }
 
 .work-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-left: -30px;
 }
  
 .work-item {
@@ -168,23 +191,9 @@ body {
     background-color: #F5F4FA;
 }
 
-.heading {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    padding-bottom: 50px;
-}
-
 .team-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.team-list {
-    display: flex;
     margin-left: -30px;
 }
 
@@ -196,6 +205,10 @@ body {
     color: var(--title-text-color);
     margin-left: 30px;
     text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .person-name {
@@ -262,6 +275,17 @@ body {
 }
 
 /*Портфолио*/
+
+.filter {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    margin-left: -8px;
+}
+
+.filter-button {
+    margin-left: 8px;
+}
 
 .portfolio-button {
     font-family: "Roboto", sans-serif;
@@ -330,23 +354,7 @@ img {
     margin: 0 auto;
 }
 
-.header {
-    background-color: var(--secondary-text-color);
-    border-bottom: 1px #ECECEC;
-}
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
 
 .logo-footer {
     color: #000000;
@@ -357,14 +365,9 @@ img {
     letter-spacing: 0.03em;
 }
 
-.menu-item:not(:last-child) {
-    margin-right: 50px;
-}
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
+
 
 .card {
  background-color: var(--secondary-text-color);
@@ -374,16 +377,7 @@ img {
 
 /*Позиционирование портфолио*/
 
-.filter {
-    margin-bottom: 34px;
-    display: flex;
-    justify-content: center;
-    margin-left: -8px;
-}
 
-.filter-button {
-    margin-left: 8px;
-}
 
 .card-set {
     padding: 0;
