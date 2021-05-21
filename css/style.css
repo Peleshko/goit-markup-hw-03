@@ -13,6 +13,7 @@ body {
     font-weight: 400;
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
 }
 
 /*Верхняя линия*/
@@ -41,7 +42,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     margin-right: 93px;
 }
 
@@ -144,7 +144,6 @@ body {
 .features {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     display: flex;
     justify-content: space-between;
     margin-left: -30px;
@@ -168,7 +167,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 50px;
@@ -201,7 +199,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-left: 30px;
     text-align: center;
@@ -252,7 +249,6 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .address-item:not(:last-child) {
@@ -297,7 +293,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
     background-color: #F5F4FA;
@@ -323,7 +318,6 @@ body {
 .card-text {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
 
 /*Позиционирование*/
@@ -367,7 +361,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 
 
