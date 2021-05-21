@@ -19,7 +19,7 @@ body {
 
 .header {
     background-color: var(--secondary-text-color);
-    border-bottom: 1px #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
