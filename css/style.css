@@ -331,6 +331,10 @@ body {
     margin-bottom: 30px;
 }
 
+.item:nth-child(3n+3){
+    margin-right: -30px;
+}
+
 .card-link {
     display: block;
 }
