@@ -211,15 +211,20 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .person-name {
     margin-bottom: 10px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .job-name {
     font-weight: 400;
     color: var(--primary-text-color);
-    padding-bottom: 30px;
+   /* padding-bottom: 30px;*/
 }
 
 /*Футер*/
