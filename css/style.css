@@ -237,6 +237,14 @@ body {
     flex-direction: column;
 }
 
+.logo-footer {
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
 .address {
     margin-top: 20px;
 }
@@ -278,9 +286,11 @@ body {
 /*Портфолио*/
 
 .filter {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     margin-left: -8px;
 }
 
@@ -309,8 +319,31 @@ body {
     color: var(--secondary-text-color);
 }
 
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+   /* margin-right: -30px;
+    margin-bottom: -30px;*/
+}
+
+.item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.card-link {
+    display: block;
+}
+
+.card-content {
+    padding: 20px 24px;
+    background-color: var(--secondary-text-color);
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
 .card-desc {
-    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
@@ -318,6 +351,7 @@ body {
 .card-text {
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 4px;
 }
 
 /*Позиционирование*/
@@ -351,56 +385,4 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
-
-
-
-.logo-footer {
-    color: #000000;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-}
-
-
-
-
-
-.card {
- background-color: var(--secondary-text-color);
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
- border-radius: 0px 0px 4px 4px;
-}
-
-/*Позиционирование портфолио*/
-
-
-
-.card-set {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.card-set > .item {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  
-  .portfolio-card {
-    background: #FFFFFF;
-    box-sizing: border-box;
-  }
-  
-  .card-content {
-    padding: 20px 24px;
-    border: 1px solid #EEEEEE;
-  }
-  
-  .card-text {
-    margin-top: 4px;
-  }
+} 
