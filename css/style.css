@@ -348,7 +348,7 @@ body {
 }
 
 .card-desc {
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
